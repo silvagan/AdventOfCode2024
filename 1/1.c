@@ -29,11 +29,12 @@ int main(){
 
 	while (fgets(line, 1000, fptr) != NULL)
 	{
+		printf("%s\n", line);
 		token = strtok(line, " ");
-		printf("%s\n", token);
+		// printf("%s\n", token);
 		left[working_index] = atoi(token);
 		token = strtok(NULL, " ");
-		printf("%s\n", token);
+		// printf("%s\n", token);
 		right[working_index] = atoi(token);
 		working_index++;
 	}
